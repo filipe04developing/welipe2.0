@@ -2,8 +2,84 @@
 <html lang="en">
 <head>
   <title>Website Store</title>
+  <style>
+    #barra{
+  float:left;
+  background-color: aquamarine;
+  width: 8%;
+  height: 100%;
+  display:inline-block;
+}
+#frame{float:left;display:inline-block;
+}
+#ac1{
+  background-color: orange;
+  width: 100%;
+  text-align:center;
+}
+#gr1{background-color: white;
+  width: 100%;
+  text-align:center;
+}
+#in1{background-color: dodgerblue;
+  width: 100%;
+  text-align:center;
+}
+#es1{background-color: royalblue;
+  width: 100%;
+  text-align:center;
+}
+
+/*pass the mouse*/
+#ac1:hover{
+ background-color: rgb(194, 126, 0); 
+}
+#gr1:hover{
+ background-color: rgb(144, 144, 144); 
+}
+#in1:hover{
+  background-color: rgb(15, 108, 189);
+}
+#es1:hover{
+  background-color: rgb(42, 68, 145);
+}
+/*requirements*/
+.hidden{
+  display: none;
+}
+
+input{
+  display: block;
+}
+
+#bar{
+  text-align:center;
+}
+  </style>
+  <script>
+    function requirements(id){
+  if(document.getElementById(id).style.display == 'block'){
+    document.getElementById(id).style.display = 'none';
+  }else{document.getElementById(id).style.display = 'block';}
+}
+  </script>
+  
   </head>
   <body>
-   IN DEVELOPMENT...
+   <header>
+  <button onclick= "requirements('bar')"> Click in me for requirements </button>
+    </header>
+  <div id="bar" class=hidden>Minimum:<br>CPU: Intel Core i3-350M/ Intel Core 2 Duo E7500/ AMD A4-3400 <br> 4GB RAM<br><br>Recommended: <br> CPU: Intel Core i5-2520M/ Intel Core i3-3220/ AMD A8-3870K<br>4GB RAM </div>
+
+  <h1 align = left>Website Store</h1>
+  <p align = left>For weak PC, low internet and cheap SSDs.</p>
+  
+<div id = barra>
+  <button id = ac1>Accessories</button>
+  <button id = gr1>Graphics</button>
+  <button id = in1>Internet</button>
+  <button id = es1>Office</button>
+ </div><div id = frame>
+  <iframe width="800px" height="600px" name="programwindow">///</iframe></div>
   </body>
 </html>
