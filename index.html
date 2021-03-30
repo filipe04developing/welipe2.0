@@ -4,13 +4,18 @@
   <title>Website Gallery (BETA)</title>
   <style>
     body{
-      margin: 50px;
+      
      font: 20pt Arial;
       background-image: url("background.png");
       background-repeat: no-repeat;
   background-size: cover; 
     }
     h1{font: 50pt Arial;}
+    
+    #centralizado{
+     margin: 0 auto;
+      width: 50%;
+    }
     #barra{
   float:left;
   background-color: aquamarine;
@@ -74,6 +79,7 @@ input{
   
   </head>
   <body>
+    <div id = centralizado>
    <header>
   <button onclick= "requirements('bar')"> Click in me for requirements </button>
     </header>
@@ -89,5 +95,6 @@ input{
   <a href = "office.html" target="programwindow"><button id = es1>Office</button></a>
  </div><div id = frame>
   <iframe width="800px" height="600px" name="programwindow">///</iframe></div>
+    </div>
   </body>
 </html>
